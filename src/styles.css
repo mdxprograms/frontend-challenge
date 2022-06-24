@@ -1,0 +1,80 @@
+/* Custom fonts for Optum Theme */
+
+@font-face {
+  font-family: "Optum Sans";
+  src: url("./assets/fonts/OptumSans-Regular.otf") format("otf"),
+      url("./assets/fonts/OptumSans-Regular.ttf") format("ttf"),
+      url("./assets/fonts/OptumSans-Regular.woff2") format("woff2"),
+      url("./assets/fonts/OptumSans-RegularItalic.otf") format("otf"),
+      url("./assets/fonts/OptumSans-RegularItalic.ttf") format("ttf"),
+      url("./assets/fonts/OptumSans-RegularItalic.woff2") format("woff2");
+}
+
+/* Font weight & style applied to allow mapping to Optum Sans Bold */
+
+@font-face {
+  font-family: "Optum Sans";
+  src: url("./assets/fonts/OptumSans-Bold.otf") format("otf"), url("./assets/fonts/OptumSans-Bold.ttf") format("ttf"),
+      url("./assets/fonts/OptumSans-Bold.woff2") format("woff2"),
+      url("./assets/fonts/OptumSans-BoldItalic.otf") format("otf"),
+      url("./assets/fonts/OptumSans-BoldItalic.ttf") format("ttf"),
+      url("./assets/fonts/OptumSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* End of custom fonts for Optum Theme */
+
+body {
+  background-color: #fbf9f4;
+  color: #5a5a5a;
+  font-family: "Optum Sans",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 2rem auto;
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #002677
+}
+
+h2 {
+  color: #002677
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #002677;
+  outline: none;
+}
+
+.items {
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+
+.items li:hover {
+  cursor: pointer;
+  color: #ff612b;
+}
+
+.items.completed li {
+  color: #5a5a5a;
+  text-decoration: line-through;
+}
+
+.items.completed li:hover {
+  color: #ff612b;
+}
